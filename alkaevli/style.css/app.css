@@ -1,0 +1,374 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+html {
+  scroll-padding-top: 245px; /* Header yüksekliği ve biraz boşluk */
+  /*bu nav bar dogru gosterim yapmadıgında kullanılıyor ayarlamak için sayfa ortalamasını dikeyde*/
+}
+body{
+  background-color:rgb(105, 107, 97);
+  color: white;
+  
+}
+header {
+  height: 45px;
+  padding: 0 150px;
+  display: flex;
+  background-color: rgb(147, 150, 138);
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  
+}
+.logo {
+  width:50px;
+  margin-right: auto;
+}
+.nav_plus {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+li, a, button{
+    color: white;
+    margin: 0 5px;
+    font-weight: 700;
+    text-decoration: none;
+}
+button {
+  margin: o 100px;
+  color: white;
+  background-color: black;
+  padding: 3px 15px;
+  border-radius: 15px;
+  border-color: yellow black black yellow;
+  transition: transform 0.3s ease,border-color 0.3s ease; /*burdaki transtion:(bu kısma özelliğn adı ornek border-reius ve süre sonra ease) gibi kullanabilirsiniz*/ 
+}
+button:hover {
+  transform: scale(1.1);
+  border-color:black yellow yellow black ;
+}
+
+li, a {
+  transition:color 0.4s ease;
+}
+li:hover, a:hover{
+  color: black;
+}
+.resim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.resim1 {
+  width: 20%;
+  border-radius: 10%;
+  transform: scaleX(-1);
+}
+.container {
+  padding-top: 50px; /* Header'ın altında içerik için boşluk */
+  width: 40% ;
+  margin: 20% 0 20% 0 ;
+  text-align: start;
+}
+.typeWriterSpan  {
+  display: flex;
+  align-items: baseline;
+  height: 20px;
+}
+.typeWriter {
+  padding: 0 0 10px 5px;
+  color: black;
+  line-height:1;
+}
+.container h1 {
+  padding: 0 0 10px 0;
+}
+
+#loremSide {
+  padding: 5px 0 0 0 ;
+ 
+}
+.icons {
+  display: flex;
+  justify-content: left;
+  margin: 20px 0 10px 0;
+  
+}
+.icons img {
+  width: 25px;
+  border-radius: 15px; 
+  border: 1px solid yellow; 
+  box-shadow: 0 0 10px yellow; 
+}
+#activity {
+  width: 100%;
+  background-color:rgb(105, 107, 97);
+  margin-bottom: 20px;
+  
+}
+.con-e, .con-b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  position: relative;
+  left: 40%;
+  background-color: black;
+}
+.container-E {
+background-color:rgb(51, 42, 42);
+display: flex;
+align-items: center;
+position: relative;
+width: 100%;
+border: 1px solid #2b2020;
+border-radius: 5%;
+}
+.column {
+  flex: 1;
+  padding: 20px;
+  
+}
+.left-content {
+  text-align: center;
+  border-right: 5px solid #2b2020;
+  border-radius: 20px;
+  
+}
+.right-content {
+  text-align: center;
+  border-left: 5px solid #2b2020;
+  border-radius: 20px;
+ 
+}
+.divider {
+  position: absolute;
+  top: 45%;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px;
+  border-radius: 50%;
+  background-color: yellow;
+  height: 10%;
+}
+.datee {
+  text-align: end;
+  padding: 0 15px 0 0;
+  font-size: 25px;
+}
+.date {
+  text-align: start;
+  padding: 0 15px 0 0;
+  font-size: 25px;
+}
+
+#about {
+  margin-top: 200px;
+  width: 100%;
+  justify-content: center;
+}
+
+.hizmetler{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.wrapper {
+  width: 750px;
+  max-width: 90%;
+  height: 400px;
+  display: flex;
+  gap: 400px;
+  overflow-x: scroll;
+  overflow: hidden; 
+  position: relative;
+  margin: 0 auto; /* Ortalamak için */
+  justify-content: center; 
+  z-index: 1;
+}
+/* İçeriklerin kaydırılması için animasyon */
+.wrapper::-webkit-scrollbar {
+  display: none; /* Webkit tabanlı tarayıcılarda kaydırma çubuğunu gizler */
+}
+.wrapper {
+  scroll-behavior: smooth; 
+}
+.image {
+  display: flex;
+  box-sizing: border-box;
+  flex-shrink: 1;
+  border-radius: 0px;
+  background-color: aqua;
+  width: 100%; 
+  height: 100%; 
+  
+}
+#contact  {
+  color: black;
+  text-align: center;
+  margin: 50px 0 50px 0;
+  width: 50%;
+  height: 100px;
+  background-color: wheat;
+  position: relative;
+  left: 25%;
+  border-radius: 10px;
+  
+}
+.aa{
+  font-size: 30px;
+}
+.container-BA a {
+ color: rgb(19, 19, 116);
+}
+footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  background-color: rgb(34, 31, 31);
+}
+ 
+
+
+
+@media screen and (max-width: 760px) {
+  header {
+    padding: 0 10px;
+  }
+  .con-e, .con-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    border: 2px solid yellow;
+    border-radius: 10px; 
+    position: relative;
+    left: 30%;
+    background-color: black;
+  }
+  .resim{
+    display: block;
+    justify-content: center;
+    margin: auto;
+    position: relative;
+    left: 10%;
+  }
+  .resim1 {
+    width: 50%;
+    margin-bottom: 20px ;
+  }
+  .container {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  
+  .con-e, .con-b {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 30px;
+    border: 2px solid yellow;
+    border-radius: 10px;
+    position: relative;
+    left: 35%;
+    background-color: black;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    height: 45px;
+  }
+  .image_one {
+    display: none; 
+  }
+}
+
+@media (max-width: 420px) {
+  .amt {
+    display: none;
+  }
+
+  .typeWriter {
+    padding: 0 0 10px 0;
+    text-align: left; 
+  }
+  
+}
+
+/* 600 pikselden küçük ekranlar için stil */
+@media (max-width: 600px) {
+  .nav_plus {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 25%;
+    width: 100px;
+    padding-top: 0px;
+    text-align: left;
+    border-radius: 0;
+  }
+
+  .nav_plus li {
+    margin: 5px 0;
+  }
+
+  .nav_plus li a {
+    color: white;
+    padding: 2px;
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+    position: absolute;
+    left: 10px;
+  }
+  #contact {
+    text-align: center;
+    margin: 50px 0 50px 0;
+    width: 100%;
+    height: 100px;
+    background-color: wheat;
+    align-items: center;
+    position: relative;
+    left: auto;
+    justify-items: center;
+    }
+  
+}
+
+
+@media (min-width: 600px) {
+  .hamburger {
+    display: none;
+  }
+}
