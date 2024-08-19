@@ -20,7 +20,7 @@
             </ul>
         </nav>
         <a class="plus" href="#login"><button>Giriş</button></a>
-        <button class="hamburger" id="hamburger-btn">&#9776;</button> <!-- Hamburger Menüsü Butonu -->
+        <button class="hamburger" id="hamburger-btn">&#9776;</button> <!-- Hamburger buton -->
     </header>
 
     
@@ -195,11 +195,11 @@
                 setTimeout(typeWriter, speed);
             } else if (index === 0 && isDeleting) {
                 isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length; // Bir sonraki metne geç
+                textIndex = (textIndex + 1) % texts.length;
                 setTimeout(typeWriter, speed);
             } else {
                 isDeleting = true;
-                setTimeout(typeWriter, 1000); // Biraz bekle ve silmeye başla
+                setTimeout(typeWriter, 1000); 
             }
         }
        
@@ -221,7 +221,7 @@
      var nav = document.querySelector(".nav_plus");
      var hamburgerBtn = document.getElementById("hamburger-btn");
 
-     // Eğer tıklanan yer menü ya da hamburger butonu değilse menüyü kapat
+     
      if (nav.style.display === "flex" && !nav.contains(event.target) && !hamburgerBtn.contains(event.target)) {
         nav.style.display = "none";
      }
@@ -230,14 +230,14 @@
     </script>
     <script>
         const wrapper = document.querySelector('.wrapper');
-        const scrollAmount = 413; // Her bir kaydırma adımının genişliği
-        const scrollInterval = 2000; // Kaydırma aralığı (milisaniye)
+        const scrollAmount = 413; //witdh
+        const scrollInterval = 2000; //ms
 
      function autoScroll() {
             if (wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth) {
-            wrapper.scrollLeft = 0; // Geriye döner
+            wrapper.scrollLeft = 0; // go back
              } else {
-               wrapper.scrollLeft += scrollAmount; // Kaydırır
+               wrapper.scrollLeft += scrollAmount; // slide
             }
         }
 
