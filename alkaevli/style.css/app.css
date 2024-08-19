@@ -5,8 +5,8 @@
     font-family: serif;
 }
 html {
-  scroll-padding-top: 245px; /* Header yüksekliği ve biraz boşluk */
-  /*bu nav bar dogru gosterim yapmadıgında kullanılıyor ayarlamak için sayfa ortalamasını dikeyde*/
+  scroll-padding-top: 245px; /* little space */
+ 
 }
 body{
   background-color:rgb(105, 107, 97);
@@ -74,7 +74,7 @@ li:hover, a:hover{
   transform: scaleX(-1);
 }
 .container {
-  padding-top: 50px; /* Header'ın altında içerik için boşluk */
+  padding-top: 50px; 
   width: 40% ;
   margin: 20% 0 20% 0 ;
   text-align: start;
@@ -197,13 +197,13 @@ border-radius: 5%;
   overflow-x: scroll;
   overflow: hidden; 
   position: relative;
-  margin: 0 auto; /* Ortalamak için */
+  margin: 0 auto; 
   justify-content: center; 
   z-index: 1;
 }
-/* İçeriklerin kaydırılması için animasyon */
+
 .wrapper::-webkit-scrollbar {
-  display: none; /* Webkit tabanlı tarayıcılarda kaydırma çubuğunu gizler */
+  display: none; /* hide slider bar */
 }
 .wrapper {
   scroll-behavior: smooth; 
@@ -321,7 +321,7 @@ footer p {
   
 }
 
-/* 600 pikselden küçük ekranlar için stil */
+
 @media (max-width: 600px) {
   .nav_plus {
     display: none;
